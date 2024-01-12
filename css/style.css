@@ -1,0 +1,1034 @@
+/* Imports */
+/* Icons */
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  color: #fff;
+  background: rgb(0, 102, 153);
+}
+a {
+  display: inline-block;
+  color: #000;
+  transition: all 300ms ease-in-out;
+}
+a:hover,
+a.active {
+  color: var(--color-primary);
+}
+i[class^="bx"] {
+  vertical-align: middle;
+}
+ul,
+address {
+  margin-bottom: 0;
+}
+.imgFluid {
+  max-width: 100%;
+}
+.primary-color {
+  color: var(--color-primary);
+}
+.section-content .subHeading {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.section-content .heading {
+  font-size: 3.25rem;
+  line-height: 1.1;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.section-content p {
+  color: #666;
+  line-height: 2;
+}
+.section-content span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.header-btns {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  height: 100%;
+}
+
+.themebtn {
+  background-color: rgb(0, 102, 153);
+  padding: 10px 35px;
+  border-radius: 40px;
+  color: #fff;
+  border: 1px solid rgb(0, 102, 153);
+}
+
+.themebtn:hover {
+  background: transparent;
+  color: rgb(0, 102, 153);
+}
+
+.themelight {
+  background-color: #fff;
+  padding: 10px 35px;
+  border-radius: 40px;
+  color: #000;
+  font-family: "Montserrat";
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+
+.themelight:hover {
+  background: transparent;
+  color: #fff;
+}
+
+/********** Header Main CSS Start *********/
+
+.header-top {
+  background-color: rgb(243, 243, 243);
+  padding: 10px 0px;
+}
+
+.header-languges {
+  text-align: end;
+}
+
+.header-languges select {
+  border: 1px solid rgb(0, 102, 153);
+  border-radius: 30px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.header-location a {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.header-location a span {
+  font-size: 18px;
+  padding: 0px 2px 0px 0px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-logo img {
+  width: 120px;
+}
+
+.header-main {
+  padding: 15px 0px;
+}
+
+.header-logo-txt h3 {
+  font-size: 26px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header-logo-txt h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+}
+
+.header-btns a {
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.header-location a:focus {
+  outline: none;
+}
+
+.header-end {
+  background-color: rgb(0, 102, 153);
+  padding: 15px 0px;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav ul li a {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.header-nav ul li a::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  height: 3px;
+  width: 0%;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.6s ease;
+  border-radius: 30px;
+}
+
+.header-nav ul li a:hover:before {
+  width: 100%;
+}
+
+.header-languges select:focus {
+  outline: none;
+}
+
+/********** Header Main CSS End *********/
+
+/********** First Banner Section CSS Start *********/
+
+.first-banner-sec {
+  background: url(../images/first-banner-bg.png) no-repeat top center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0px 13px 0px;
+}
+
+.first-banner-txt {
+  text-align: center;
+  padding: 150px 0px 128px 0px;
+}
+
+.first-banner-txt h6 {
+  font-size: 28px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.first-banner-txt h3 {
+  font-size: 65px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.first-banner-txt h4 {
+  font-size: 41px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.first-banner-txt p {
+  font-size: 23px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0px 30px 0px;
+}
+
+.first-absltimg img {
+  position: absolute;
+  top: 0px;
+  width: 320px;
+  left: 30px;
+}
+
+.first-absltimg {
+  position: relative;
+}
+
+.second-absltimg {
+  position: relative;
+}
+
+.second-absltimg img {
+  position: absolute;
+  right: 20px;
+  bottom: -17px;
+  width: 330px;
+}
+
+/********** First Banner Section CSS End *********/
+
+/********** What We Do Section CSS Start *********/
+
+.whatwedo-sec .container {
+  max-width: 1200px;
+}
+
+.whatwe-img img {
+  width: 100%;
+}
+
+.whatwedo-sec {
+  padding: 50px 0px;
+}
+
+.whatwe-txt h3 {
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.whatwe-txt p {
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0px 0px 30px 0px;
+}
+
+.whatwe-img p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+}
+
+.whatwe-contact {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.what-phonenmbr {
+  display: flex;
+  margin: 30px 0px 0px 0px;
+  gap: 15px;
+}
+
+.what-phonenmbr span {
+  background: rgb(0, 102, 153);
+  color: #fff;
+  font-size: 20px;
+  padding: 0px 7px 4px 6px;
+  border-radius: 40px;
+}
+
+.what-phonenmbr h6 {
+  margin: 0px;
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 6px 0px 0px 0px;
+}
+
+/********** What We Do Section CSS End *********/
+
+/********** What We Offer Section CSS Start *********/
+
+.whatoffer-sec .container {
+  max-width: 1200px;
+}
+
+.whatoffer-txt h4 {
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.whatoffer-txt {
+  text-align: center;
+}
+
+.whatoffer-sec {
+  padding: 50px 0px 50px 0px;
+}
+
+.whatoffer-txt p {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.whatoffer-sec .nav-item a {
+  width: 180px;
+  height: 180px;
+  border-radius: 50% 50% 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0 0px;
+  border: none;
+}
+
+.whatoffer-sec a.nav-link span {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 125px;
+  display: inline-block;
+  background: none;
+  transition: all 300ms ease-in-out;
+}
+
+#myTabContent {
+  padding: 40px 40px;
+  background-color: rgb(0 102 153 / 13%);
+}
+
+.nav-tabs {
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.whatoffer-sec .nav-item .active {
+  background: rgb(0 102 153 / 13%) !important;
+}
+
+.whatoffer-sec a.nav-link.active span {
+  background: rgb(0, 102, 153);
+}
+
+
+.whatoffer-sec a.nav-link.active span img {
+    filter: invert(1);
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0px;
+}
+
+
+/********** What We Offer Section CSS End *********/
+
+/********** Case Study Section CSS Start *********/
+
+.casestudy-btn {
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  gap: 30px;
+}
+
+.casestudy-btn .tax-btn {
+  padding: 13px 0px 0px 0px;
+  color: #000;
+  font-weight: bold;
+  text-decoration-line: underline !important;
+}
+
+.casestudy-btn .tax-btn:hover {
+  text-decoration-line: none !important;
+}
+
+/********** Case Study Section CSS End *********/
+
+/********** Our Affiliate Section CSS Start *********/
+
+.our-affiliate-sec {
+  padding: 50px 0px 40px 0px;
+  background-color: rgb(0, 102, 153);
+  margin: 50px 0px 0px 0px;
+}
+
+.our-affiliate-txt {
+  text-align: center;
+}
+
+.our-affiliate-txt h3 {
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
+}
+
+.our-affiliate-txt p {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  margin: 0px 0px 20px 0px;
+}
+
+.themetransparent {
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.themetransparent:hover {
+  background: #fff;
+  color: rgb(0, 102, 153);
+}
+
+/********** Our Affiliate Section CSS End *********/
+
+/********** How Its Work Section CSS Start *********/
+
+.howwork-sec {
+  margin: 0px 0px 100px 0px;
+}
+
+.howwork-sec .container {
+  max-width: 1200px;
+}
+
+.howwork-txt {
+  padding: 50px 80px 10px 70px;
+  background: #f4f4f7;
+}
+
+.howwork-txt h3 {
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+
+.howwork-txt ul li {
+  margin: 0px 0px 40px 0px;
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0px 0px 0px 20px;
+}
+
+.howwork-txt ul li::marker {
+  content: "🔷" ;
+}
+
+/********** How Its Work Section CSS End *********/
+
+/********** Frequently Asked Question Section CSS Start *********/
+
+.faqs-sec {
+  padding: 50px 0px 0px;
+  margin: 0px 0px 40px 0px;
+}
+
+.faqs-sec .container {
+  background: #fff;
+  max-width: 1200px;
+  padding: 60px;
+  box-shadow: 0 0 13px #00000047;
+}
+
+/* accordion
+------------------------------------*/
+
+.accordion,
+.accordion * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.accordion {
+  overflow: hidden;
+  background: none;
+  margin-top: 30px;
+}
+
+.quest-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0c2745;
+  padding: 0px 15px 0px 35px;
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+  min-height: 60px;
+  line-height: 60px;
+  display: inline-block;
+  transition: all linear 0.15s;
+  text-decoration: none;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.quest-title:before {
+  position: absolute;
+  content: "\ebc0";
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
+  font-family: "boxicons";
+  color: #1e1e1e;
+  font-size: 20px;
+}
+
+.quest-title.active,
+.quest-title:hover {
+  content: "\e91c";
+}
+
+.quest-title:after {
+  width: 60px;
+  height: 1px;
+  left: -60px;
+  bottom: -1px;
+  background: #dbdbdb;
+  position: absolute;
+  content: "";
+}
+
+.quest-title.active:before {
+  content: "\eb8b" !important;
+  font-family: "boxicons";
+}
+
+.quest-content {
+  padding: 10px 20px;
+  display: none;
+  margin-bottom: 0px;
+  float: left;
+  width: 100%;
+  margin: 10px 0px 10px 30px;
+}
+
+.quest-content p {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+  color: #36363659;
+  position: relative;
+}
+
+.quest-content p::before {
+  position: absolute;
+  content: "";
+  background: rgb(0, 102, 153);
+  height: 100%;
+  width: 2px;
+  left: -20px;
+}
+
+.faqs-heading {
+  padding: 0px 0px 20px 0px;
+  position: relative;
+}
+
+.faqs-heading h3 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #000;
+  letter-spacing: -3px;
+  padding: 0px 0px 0px 100px;
+}
+
+.faqs-heading::before {
+  position: absolute;
+}
+
+.faqs-heading::before {
+  position: absolute;
+  background: rgb(0, 102, 153);
+  content: "";
+  height: 1px;
+  width: 200px;
+  bottom: 10px;
+  left: 0px;
+}
+
+.faqsbefore {
+  position: relative;
+}
+
+.faqsbefore::before {
+  position: absolute;
+  content: "";
+  background: rgb(0, 102, 153);
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+  top: -50px;
+}
+
+
+
+/********** Frequently Asked Question Section CSS End *********/
+
+
+/********** Blogs Section CSS Start *********/
+
+
+.blogs-sec {
+  padding: 30px 0px 80px 0px;
+}
+
+
+.blogs-sec .container {
+  max-width: 1200px;
+}
+
+.blogs-sec h3 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0px 0px 30px 0px;
+}
+
+.blog-card img {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+
+.blog-card {
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.07);
+    padding: 30px 15px;
+    background: #fff;
+}
+
+.blog-card h4 {
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.blog-card h6 {
+    font-size: 13px;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.blog-card p {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(0, 0, 0);
+    padding: 0px 0px 10px 0px;
+}
+
+/********** Blogs Section CSS End *********/
+
+
+/********** Articles Section CSS Start *********/
+
+
+.articles-sec {
+  padding: 30px 0px 20px 0px;
+}
+
+
+.articles-sec .container {
+  max-width: 1200px;
+}
+
+.articles-sec h3 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0px 40px 0px;
+}
+
+
+/********** Articles Section CSS End *********/
+
+
+/********** Contact US Section CSS Start  *********/
+
+.contact-us-sec{
+  padding: 50px 0px 50px 0px;
+}
+
+.input-field{
+  margin: 20px 0px 20px 0px;
+}
+
+.input-field input{
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  border: none;
+  background-color: rgb(244, 244, 244);
+}
+
+.contact-us-sec .container {
+  max-width: 1200px;
+}
+
+.input-field input:focus {
+  outline: none;
+}
+
+.input-field textarea {
+  width: 100%;
+  display: block;
+  padding:  20px;
+  background-color: rgb(244, 244, 244);
+  border: none;
+  resize: none;
+}
+
+.input-btn {
+  text-align: center;
+  margin: 40px 0px 0px 0px;
+}
+
+.input-field input::placeholder {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.659);
+}
+
+.input-field textarea:focus {
+  outline: none;
+}
+
+.input-btn button {
+  padding: 15px 55px;
+  border: 1px solid rgb(0, 102, 153);
+  background-color: rgb(0, 102, 153);
+  color: #fff;
+  transition: all .6s ease;
+}
+
+.input-btn button:hover {
+  background: transparent;
+  color: rgb(0, 102, 153);
+}
+
+.contact-us-sec h3 {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/********** Contact US Section CSS End  *********/
+
+
+
+/********** Newsletter Section CSS Start  *********/
+
+
+.newsletter-sec {
+  padding: 20px 0px 50px 0px;
+}
+
+.newsletter-sec .container {
+  max-width: 1200px;
+}
+.newsletter-txt h4 {
+  font-size: 35px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.newsletter-input input {
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 5px;
+  background-color: rgb(244, 244, 244);
+  border: none;
+}
+
+
+.newsletter-input input::placeholder {
+  font-size: 17.424px;
+  font-family: "Source Sans Pro";
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.newsletter-txt {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.newsletter-input {
+  position: relative;
+}
+
+.newsletter-input button {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding: 13px 45px;
+  font-size: 24px;
+  border-radius: 5px;
+  color: #fff;
+  background: rgb(0, 102, 153);
+  border: 1px solid rgb(0, 102, 153);
+  transition: all .6s ease;
+}
+
+.newsletter-input button:hover {
+  background: transparent;
+  color: rgb(0, 102, 153);
+}
+
+.newsletter-input input:focus {
+  outline: none;
+}
+
+/********** Newsletter Section CSS End  *********/
+
+
+/********** Footer Main Section CSS Start  *********/
+
+footer.footer-main {
+  background: rgb(244, 244, 244);
+  padding: 50px 0px;
+}
+
+.footer-main .container {
+  max-width: 1200px;
+}
+
+.footer-link ul li a {
+  font-family: 'Hanken Grotesk';
+  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+}
+
+.footer-link ul li a:hover {
+  color: rgb(0, 102, 153);
+}
+
+.footer-youtube {
+  margin: 40px 0px 0px 0px;
+  text-align: center;
+}
+
+.footer-youtube .themebtn {
+  border-radius: 0px;
+}
+
+.youtubebtn {
+  margin: 10px 0px 0px 0px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.youtubebtn a {
+  font-size: 14px;
+  text-decoration-line: underline !important;
+}
+
+.youtubebtn span {
+  font-size: 50px;
+  margin: -6px 0px 0px 0px;
+  color: red;
+}
+
+.footer-socialicons  ul {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socialicons ul li a {
+  padding: 5px 11px 7px 11px;
+  border: 1px solid rgb(0, 102, 153);
+  border-radius: 50px;
+  font-size: 20px;
+  color: rgb(0, 102, 153);
+}
+
+.footer-socialicons ul li a:hover {
+  background: rgb(0, 102, 153);
+  color: #fff;
+}
+
+.footer-address ul li span {
+  margin: 0px 10px 0px 0px;
+  background: rgb(0, 102, 153);
+  color: #fff;
+  padding: 1px 6px 3px 6px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.footer-address ul li {
+  margin: 12px 0px;
+  padding: 0px 70px  0px 0px;
+}
+
+.footer-address {
+  padding: 0px 0px 0px 80px;
+}
+
+
+.copyright-txt p {
+  margin: 0px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+}
+
+.footer-copyright {
+  background-color: rgb(0, 102, 153);
+  text-align: center;
+  padding: 12px 0px;
+}
+
+/********** Footer Main Section CSS End  *********/
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1370px;
+  }
+}
